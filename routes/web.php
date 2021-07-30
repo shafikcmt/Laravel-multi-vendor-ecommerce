@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/',HomeComponent::class);
 Route::get('/',App\Http\Livewire\HomeComponent::class);
 Route::get('/shop',App\Http\Livewire\ShopComponent::class);
-Route::get('/cart',App\Http\Livewire\CartComponent::class);
+Route::get('/cart',App\Http\Livewire\CartComponent::class)->name('product.cart');
 Route::get('/checkout',App\Http\Livewire\CheckoutComponent::class);
 Route::get('/product/{slug}',App\Http\Livewire\DetailsComponent::class)->name('product.details');
 

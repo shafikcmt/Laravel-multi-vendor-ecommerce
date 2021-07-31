@@ -19,5 +19,9 @@ php artisan make:factory ProductFactory --model=Product
 php artisan db:seed
 php artisan make:livewire DetailsComponent
 composer require hardevine/shoppingcart
+php artisan vendor:publish --provider="Gloudeman\ShoppingcartServiceProvider" --tag="config"
+php artisan make:livewire CategoryComponent
+php artisan make:livewire HeaderSearchComponent
+php artisan make:livewire SearchComponent
 
 

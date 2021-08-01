@@ -24,6 +24,7 @@ php artisan make:livewire CategoryComponent
 php artisan make:livewire HeaderSearchComponent
 php artisan make:livewire SearchComponent
 php artisan make:livewire admin/AdminCategoryComponent
+php artisan make:livewire admin/AdminAddCategoryComponent
 
 
 

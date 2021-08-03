@@ -28,21 +28,25 @@
                                     <th>Action</th>
                                 </tr>
                             </thead>
-                        </table>
+                        
                         <tbody>
                             @foreach($sliders as $slider)
                             <tr>
                                 <td>{{$slider->id}}</td>
-                                <td><img  src="{{asset('assets/images/sliders')}}/{{$slider->image}}" alt="" width="120"></td>
+                                <td><img  src="{{asset('assets/images/sliders')}}/{{$slider->image}}" alt="" width="120"/></td>
                                 <td>{{$slider->title}}</td>
                                 <td>{{$slider->subtitle}}</td>
                                 <td>{{$slider->price}}</td>
                                 <td>{{$slider->link}}</td>
                                 <td>{{$slider->status == 1 ? 'Active':'Inactive'}}</td>
                                 <td>{{$slider->created_at}}</td>
+                                <td>
+                                    <a href="{{route('admin.edithomeslider',['slide_id'=>$slider->id])}}" ><i class="fa fa-edit fa-2x text-info"></i></a>
+                                </td>
                             </tr>
                             @endforeach
                         </tbody>
+                        </table>
                    </div>
                </div>
            </div>

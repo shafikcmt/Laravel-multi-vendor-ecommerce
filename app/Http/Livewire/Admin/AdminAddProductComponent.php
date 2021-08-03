@@ -7,7 +7,7 @@ use App\Models\Category;
 use Illuminate\Support\Str;
 use Livewire\WithFileUploads;
 use App\Models\Product;
-use Illuminate\Support\Carbon;
+use Carbon\Carbon;
 
 class AdminAddProductComponent extends Component
 {

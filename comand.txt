@@ -28,6 +28,7 @@ php artisan make:livewire admin/AdminAddCategoryComponent
 php artisan make:livewire admin/AdminEditCategoryComponent
 php artisan make:livewire admin/AdminProductComponent
 php artisan make:livewire admin/AdminAddProductComponent
+php artisan make:livewire admin/AdminEditProductComponent
 
 
 

@@ -42,5 +42,9 @@ Route::middleware(['auth:sanctum','verified','authadmin'])->group(function(){
     Route::get('/admin/products',App\Http\Livewire\Admin\AdminProductComponent::class)->name('admin.products');
     Route::get('/admin/products/add',App\Http\Livewire\Admin\AdminAddProductComponent::class)->name('admin.addproduct');
     Route::get('/admin/product/edit/{product_slug}',App\Http\Livewire\Admin\AdminEditProductComponent::class)->name('admin.editproduct');
+   
+    Route::get('/admin/slider',App\Http\Livewire\Admin\AdminHomeSliderComponent::class)->name('admin.homeslider');
+    Route::get('/admin/slider/add',App\Http\Livewire\Admin\AdminAddHomeSliderComponent::class)->name('admin.addhomeslider');
+    Route::get('/admin/slider/edit/{slide_id}',App\Http\Livewire\Admin\AdminEditHomeSliderComponent::class)->name('admin.edithomeslider');
     
 });

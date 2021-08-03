@@ -29,6 +29,13 @@ php artisan make:livewire admin/AdminEditCategoryComponent
 php artisan make:livewire admin/AdminProductComponent
 php artisan make:livewire admin/AdminAddProductComponent
 php artisan make:livewire admin/AdminEditProductComponent
+php artisan make:model HomeSlider -m
+php artisan migrate
+php artisan make:livewire admin/AdminHomeSliderComponent
+php artisan make:livewire admin/AdminAddHomeSliderComponent
+php artisan make:livewire admin/AdminEditHomeSliderComponent
+
+
 
 
 

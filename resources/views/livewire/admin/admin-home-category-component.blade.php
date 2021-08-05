@@ -48,7 +48,7 @@
         $('.sel_categories').select2();
         $('.sel_categories').on('change',function(e){
             var data = $('.sel_categories').select2('val');
-            $this.set('selected_categories',data);
+            @this.set('selected_categories',data);
         });
     });
 </script>
